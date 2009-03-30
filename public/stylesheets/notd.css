@@ -1,0 +1,9 @@
+body {
+  background : #D9D9D9 url(/images/notd/page_shadow_bg.gif) repeat-y scroll center center;
+}
+
+#page {
+  width : 996px ;
+  padding : 5px 0px ;
+  margin : auto ;
+}
