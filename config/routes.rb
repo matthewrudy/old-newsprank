@@ -1,6 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :stories
   map.resources :notd, :controller => "notd"
+  
+  map.namespace :sites do |sites|
+    sites.news_of_the_day "news_of_the_day/:id", :controller => "news_of_the_day", :action => "show"
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
 

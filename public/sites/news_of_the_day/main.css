@@ -1,0 +1,59 @@
+* {
+	padding : 0 ;
+	margin : 0 ;
+}
+
+body {
+	background : #DDDDDD url(bg.jpg) repeat-x scroll 0 0 ;
+	font-family : Helvetica, Arial, san-serif ;
+}
+
+div#wrapper {
+	width : 1000px ;
+	margin : auto ;
+	padding : 2px ;
+	background : white ;
+	color : black ;
+}
+
+div#wrapper div#header {
+	background : #CC0000 ;
+	color : white ;
+	height : 140px ;
+}
+
+div#wrapper div#content div#story {
+	width : 834px ;
+	float : left ;
+}
+
+div#wrapper div#content div#wide-skyscraper {
+	float : left ;
+}
+
+div#header, div#content, div#footer {
+	clear : both ;
+}
+
+div#wrapper div#header div#title {
+	width : 250px ;
+	float : left ;
+}
+
+div#wrapper div#header div#leaderboard {
+	float : left ;
+	margin : 0 50 ;
+}
+
+
+div#wrapper div#header h1 {
+	font-size : 300% ;
+}
+
+div#wrapper div#content div#story h2 {
+	font-size : 300%;
+}
+
+div#story .story-image {
+	float : left ;
+}

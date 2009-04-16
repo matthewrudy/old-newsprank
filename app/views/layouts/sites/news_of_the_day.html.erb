@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<title>index</title>
+		<link rel="stylesheet" href="main.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header">
+				<div id="title">
+					<h1>News of the Day</h1>
+					<p class="today">Friday, April 3, 2009</p>
+				</div>
+				<div id="leaderboard">
+				  <a href='http://google.com' alt="Ad Frame"><img src="https://www.google.com/adsense/static/en_US/images/leaderboard_img.jpg" /></a>
+				</div>
+			</div>
+                        <div id="content">
+                          <%= yield %>
+				<div id="wide-skyscraper">
+					<img src="https://www.google.com/adsense/static/en_US/images/wideskyscraper_img.jpg">
+					
+				</div>
+			</div>
+			
+			<div id="footer">
+				<p>&copy; 2009</p>
+			</div>
+		</div>
+	</body>
+</html>

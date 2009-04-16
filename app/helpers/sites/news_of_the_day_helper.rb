@@ -1,0 +1,2 @@
+module Sites::NewsOfTheDayHelper
+end
