@@ -1,0 +1,71 @@
+<div id="story-dialog" title="Create a Story">
+  <h4>*your friend* IS *smelly*!</h4>
+  <p id="validateTips">All form fields are required.</p>
+  <form>
+    <fieldset>
+      <label for="name">Who is it?</label>
+      <input type="text" name="who" id="story-generator-who" class="text ui-widget-content ui-corner-all" />
+
+      <label for="email">What are they?</label>
+      <input type="text" name="what" id="story-generator-what" value="" class="text ui-widget-content ui-corner-all" />
+    </fieldset>
+  </form>
+</div>
+
+<script type="text/javascript">
+  $(function() {
+    /* only add the button if they have javascript */
+    $('form#new_story').before('<button id="start-generator">Generate a story!</button>');
+    $('#start-generator').click(function() {
+      $('#story-dialog').dialog('open');
+    });
+
+    $("#story-dialog").dialog({
+      bgiframe: true,
+      autoOpen: false,
+      height: 300,
+      modal: true,
+      buttons: {
+	'Create my story!': function() {
+	  var bValid = true;
+	  allFields.removeClass('ui-state-error');
+
+	  bValid = bValid && checkLength(who, 'story-generator-who',3,16);
+	  bValid = bValid && checkLength(what, 'story-generator-what',3,28);
+
+	  if (bValid) {
+	    $('#story_headline').val(buildHeadline(who.val(), what.val()));
+	    $('#story_text').val(buildStory(who.val(), what.val()));
+	    $(this).dialog('close');
+	  }
+	},
+	Cancel: function() {
+	  $(this).dialog('close');
+	}
+      },
+
+      close: function() {
+	allFields.val('').removeClass('ui-state-error');
+      }
+    });
+
+    function buildHeadline(who, what) {
+      return who + " is " + what + "!";
+    }
+    function buildStory(who, what) {
+      return "Last night it was revealed that " + who + " is indeed " + what + ".\nThey were unavailable for comment, but it is believed they will be holding a press conference later today."
+    }
+    var who = $('#story-generator-who'),
+	what = $('#story-generator-what'),
+	allFields = $([]).add(who).add(what);
+
+    function checkLength(o,n,min,max) {
+      if ( o.val().length > max || o.val().length < min ) {
+	return false;
+      } else {
+	return true;
+      }
+    }
+
+  });
+</script>

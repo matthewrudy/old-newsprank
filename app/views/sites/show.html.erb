@@ -1,0 +1,7 @@
+<div id="story">
+  <h2><%=h @story.headline %></h2>
+  <% if @story.external_image_url %>
+    <img src=<%= URI.escape(@story.external_image_url).inspect %> class="story-image" />
+  <% end %>  
+  <%= auto_link( simple_format( @story.text ) ) %>
+</div>

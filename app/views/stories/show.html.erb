@@ -1,4 +1,9 @@
 <p>
+  <b>Permalink:</b>
+  <%=h @story.permalink %>
+</p>
+
+<p>
   <b>Headline:</b>
   <%=h @story.headline %>
 </p>
@@ -8,6 +13,6 @@
   <%=h @story.text %>
 </p>
 
-
+<%= link_to 'Preview', sites_news_of_the_day_path(:id => @story.permalink) %> |
 <%= link_to 'Edit', edit_story_path(@story) %> |
 <%= link_to 'Back', stories_path %>
