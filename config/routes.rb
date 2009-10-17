@@ -1,5 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :stories
+  map.resources :generators
   map.resources :notd, :controller => "notd"
   
   map.namespace :sites do |sites|
