@@ -1,4 +1,4 @@
-class GeneratorsController < ApplicationController
+class GeneratorsController < UserBase
 
   def index
     @generators = Generator.all

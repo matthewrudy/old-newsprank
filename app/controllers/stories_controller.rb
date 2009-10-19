@@ -1,4 +1,4 @@
-class StoriesController < ApplicationController
+class StoriesController < UserBase
   # GET /stories
   # GET /stories.xml
   def index
