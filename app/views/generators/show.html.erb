@@ -1,0 +1,12 @@
+<% div_for(@generator) do %>
+  <%= @generator.name %>
+
+  <% form_tag(generate_stories_path) do %>
+    <%= hidden_field_tag("generator_id", @generator.id) %>
+    <% @generator.variables.each do |var_name, description| %>
+      <%= label_tag("generator[#{var_name}]", description) %>
+      <%= text_field_tag("generator[#{var_name}]") %>
+    <% end %>
+    <%= submit_tag("generate") %>
+  <% end %>
+<% end %>

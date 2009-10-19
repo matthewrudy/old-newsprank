@@ -63,7 +63,7 @@ class Generator
   end
 
   def to_param
-    self.id
+    self.id.to_s
   end
   
 end

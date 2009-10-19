@@ -32,6 +32,20 @@ class StoriesController < ApplicationController
     end
   end
 
+  def generate
+    @story = Story.new
+    @generator = Generator.find(params[:generator_id])
+    rendered = @generator.render(params[:generator])
+    @story.headline = rendered.headline
+    @story.text = rendered.text
+    
+    respond_to do |format|
+      format.html do
+        render :action => "new"
+      end
+    end
+  end
+
   # GET /stories/1/edit
   def edit
     @story = Story.find(params[:id])

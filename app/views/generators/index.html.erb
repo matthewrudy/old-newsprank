@@ -1,0 +1,9 @@
+<div id="generator-list">
+  <% @generators.each do |generator| %>
+    <% div_for(generator) do %>
+      <p><%=h generator.name %></p>
+      <%= link_to("use", generator) %>
+    <% end %>
+  <% end %>
+</div>
+  
