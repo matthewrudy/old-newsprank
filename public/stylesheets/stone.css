@@ -1,0 +1,65 @@
+/*
+
+Theme Name: theRunningStone
+Theme URI: http://www.michaelpalmer.de/theRunningStone/
+
+Description: Box styled Wordpress theme. It is search engine optimized in a light red style. Based on shape. Let me know what are you thinking about this theme or tell me your wishes on my website.
+Author: mitch
+
+Author URI: http://www.michaelpalmer.de/about/
+
+Tags: red, light, flexible-width, two-columns, right-sidebar, threaded-comments
+
+Version: 0.3.3
+
+
+::
+
+	
+The CSS, XHTML and design is released under GPL:
+	http://www.opensource.org/licenses/gpl-license.php
+
+*/
+
+
+
+
+/* Import a basic layout */
+@import url('stone/2c-r.css');
+
+/* Reset default browser styles */
+@import url('stone/reset.css');
+
+/* Rebuild default browser styles */
+@import url('stone/rebuild.css');
+
+/* Basic WordPress Styles */
+@import url('stone/wp.css');
+
+/* Basic WordPress Styles */
+@import url('stone/all.css');
+
+p {	line-height: 1.5em;	margin: 1.2em 0; }
+
+
+.alignleft,
+img.alignleft {
+   float:left;
+   text-align:left; 
+   display: inline;
+   margin-right: 1.5em;
+}
+.alignright,
+img.alignright {
+   text-align:left; 
+   display: inline;
+   float: right;
+   margin-left: 1.5em;
+}
+.aligncenter,
+img.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}

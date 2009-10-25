@@ -1,0 +1,32 @@
+/*
+LAYOUT: Two-Column (Right)
+DESCRIPTION: Two-column fluid layout with one sidebars right of content
+*/
+
+#wrapper,#main {
+
+}
+#container {
+	float: left;
+	margin: 0 -230px 0 0;
+	width: 100%;
+}
+#content {
+	margin: 0 250px 0 0;
+}
+#primary, #secondary {
+	float: right;
+	overflow: hidden;
+	width: 200px;
+	background: url(../../images/stone/post_bg2.png) right no-repeat #ffffff;
+	padding: 10px;
+   border: 1px solid #cbc8bf;
+   border-right: 1px solid #cbc8bf;
+   border-bottom: 1px solid #cbc8bf;
+   margin-bottom: 10px;
+}
+#footer {
+   padding-top: 10px;
+	clear: both;
+	width: 100%;
+}

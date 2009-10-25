@@ -1,0 +1,379 @@
+body {
+	margin: 1.5em 100px;
+	font-family: 'Calibri';
+	font-size: 14px;
+	color: #2d2d2d;
+	background: url(../../images/stone/body_bg.png) repeat-x #ffffff fixed bottom;
+}
+
+a, a:link, a:visited, a:active {
+	font-family: 'Calibri';
+	font-size: 14px;
+	color: #3d3d3d;
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.navigation a {
+   font-size: 11px;
+   font-weight: bold;
+   border: 0px;
+}
+
+.navigation a:hover {
+   border-bottom: 1px dotted #f73a1a;
+}
+
+#blog-description {
+   height: 40px;
+   overflow:hidden;
+}
+
+.wp-caption {
+	border: 1px solid #ddd;
+	text-align: center;
+	background-color: #f3f3f3;
+	padding-top: 4px;
+	margin: 10px;
+}
+
+.wp-caption img {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+}
+
+.wp-caption-dd {
+	font-size: 11px;
+	line-height: 17px;
+	padding: 0 4px 5px;
+	margin: 0;
+}
+
+/** Header */
+
+#branding {
+   background: url(../../images/stone/entry-title.png) repeat-x;
+   height: 69px;
+	margin: 0 0 0 0;
+	padding: 10px;
+	color: #ffffff;
+	font-size: 28px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#wordpress {
+   float: right;
+   background: url(../../images/stone/wordpress.png);
+   height: 94px;
+	width: 100px;
+	right: 0px;
+   top: 0px;
+}
+
+#wordpress2 {
+   float: right;
+	right: 0px;
+   top: 0px;
+   height: 42px;
+}
+
+#word_search_input {
+   float: left;
+   background: url(../../images/stone/search_input.png);
+   height: 30px;
+	width: 90px;
+	border: 0px;
+	margin: 0px;
+	padding: 5px;
+	font-size: 26px;
+}
+
+#word_search_btn {
+   float: left;
+   margin-left: 0px;
+   background: url(../../images/stone/search_btn.png);
+   height: 40px;
+	width: 20px;
+	border: 0px;
+	cursor: pointer;
+}
+
+#word_search_btn:hover {
+   background: url(../../images/stone/search_btn2.png);
+}
+
+.arrow_top {
+   float:right;
+   background: url(../../images/stone/arrow.png);
+   width: 30px;
+   height: 30px;
+   cursor: pointer;
+}
+
+.arrow_top:hover {
+   background: url(../../images/stone/arrow2.png);
+}
+
+#rss {
+   float: left;
+   margin-left: 1px;
+   background: url(../../images/stone/rss.png);
+   height: 38px;
+	width: 40px;
+	border: 0px;
+	cursor: pointer;
+}
+
+#rss:hover {
+   background: url(../../images/stone/rss2.png);
+}
+
+#search_man {
+   float: left;
+   margin-right: 1px;
+   margin-left: -5px;
+   background: url(../../images/stone/search_man.png);
+   height: 40px;
+	width: 38px;
+}
+
+#branding a {
+	color: #ffffff;
+	font-weight: bold;
+	text-transform: uppercase;
+	border: none;
+}
+
+#blog-title {
+	margin-bottom: -10px;
+}
+
+/* =Menu  */
+
+#access {
+   margin-top: -10px;
+	margin-bottom: 10px;
+	overflow: auto;
+}
+.skip-link {
+	display: none;
+}
+.menu ul {
+	list-style: none;
+	margin: 0;
+	margin-right: 10px;
+}
+.menu ul ul {
+	display: none;
+}
+.menu li {
+   list-style: none;
+}
+.comment {
+   list-style: none;
+   background: #ffffff;
+   padding: 10px;
+   margin-left: -35px;
+   margin-bottom: 5px;
+}
+.thread-even {
+   background: #e9e9e9;
+}
+.comment-author {
+   vertical-align:top;
+   float:left;
+}
+li.depth-2{border-left:1px solid #990505;margin-left:10px;padding-left:10px;}
+li.depth-3{border-left:1px solid #990505;margin-left:10px;padding-left:10px;}
+.avatar {
+   float:left;
+}
+.comment-meta, .comment-meta a {
+   float:right;
+   color: #ab0800;
+   font-size: 12px;
+}
+
+.menu a {
+   background: url(../../images/stone/menu_bg.png) repeat-x;
+   padding: 10px;
+	margin-right: 10px;
+   border: 1px solid #cbc8bf;
+	display: block;
+	float: left;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.menu a:hover {
+   background: #ffffff;
+   color: #d12905;
+}
+.current_page_item a {
+   background: #ffffff;
+   color: #d12905;
+}
+
+/** widget categories **/
+
+li {
+   list-style: circle;
+}
+
+.categories {
+   list-style: none;
+}
+
+.xoxo ul, .children ul {
+	list-style: none;
+	margin: 0;
+	margin-right: 10px;
+}
+
+.xoxo ul li li {
+   border-left: none;
+}
+
+.children ul {
+	padding-left: 10px;
+}
+
+.cat-item li {
+   list-style: none;
+	margin-left: -30px;
+		
+}
+
+.cat-item, .cat-item a {
+   text-decoration: none;
+   color: #000000;
+	padding: 2px;
+}
+
+.cat-item a {
+	border-bottom: 1px dotted #ab0800;
+}
+
+.cat-item a:hover {
+   font-weight: bold;
+}
+
+.current-cat {
+   font-weight: bold;
+}
+
+/* Content */
+
+.post, .navigation, #comments {
+	margin: 0 0 3em 0;	
+	background: url(../../images/stone/post_bg.png) no-repeat #ffffff;
+	padding: 10px;
+   border: 1px solid #cbc8bf;
+   border-right: 1px solid #cbc8bf;
+   border-bottom: 1px solid #cbc8bf;
+}
+
+#site-info {
+   margin-top: 10px;
+   padding-bottom: 20px;
+   padding-top: 0px;
+   border-top: 1px solid #cbc8bf;
+   height: 20px;
+   color: #6f6f6f;
+}
+
+.entry-content, .entry-summary {
+	margin: 1.5em 0 0 0;
+}
+
+/* Navigation */
+
+.navigation {
+	margin: 0 0 10px 0;
+	overflow: auto;	
+}
+
+/* Widget Areas */
+
+.widget-area ul {
+	list-style: none;
+	margin-left: 0;
+		
+}
+.widget-area ul ul {
+	list-style: disc;
+	margin-left: 1.1em;
+}
+.widget-area ul ul ul {
+	margin-left: 2.5em;
+	
+}
+.widget-container {
+	margin: 0 0 1.5em 0;
+}
+
+a img, a:link img, a:visited img, a:active img {
+   border: 1px #666 solid;
+}
+
+img {
+   margin-bottom: 10px;
+   margin-right: 10px;
+}
+
+.entry-title, .widget-title {
+   font-size: 18px;
+   border-bottom: 1px #ffffff solid;
+   text-transform: uppercase;
+   margin-left: -10px;
+   margin-top: -10px;
+   margin-right: -10px;
+   margin-bottom: 10px;
+   padding: 4px;
+   padding-left: 10px;
+   background: url(../../images/stone/entry-title.png) repeat-x;
+   color: #ffffff;
+}
+
+.page-title {
+   text-align: right;
+}
+
+.entry-utility, .entry-utility a, .form-section, .form-section a {
+   font-size: 11px;
+   color: #ab0800;
+}
+
+.entry-title a, .widget-title a {
+   font-size: 18px;
+   color: #ffffff;
+   text-transform: uppercase;
+   border: none;
+}
+
+.entry-meta, .entry-meta a {
+   font-size: 11px;
+   color: #9d9b94;
+}
+
+h3 {
+   font-size: 18px;
+}
+
+pre {
+   display: block;
+   padding: 10px;
+   border: 1px solid #ab0800;
+   overflow: auto;
+   background: #f7f7f7;
+}
+
+.widget-container {
+   list-style: none;
+}
